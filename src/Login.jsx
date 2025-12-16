@@ -11,7 +11,8 @@ const Button = styled.button`
 
 export default function Login() {
   const loginWithLinkedIn = () => {
-    window.location.href = "http://localhost:5001/auth/linkedin";
+window.location.href =
+  `${import.meta.env.VITE_BACKEND_URL}/auth/linkedin`;
   };
 
   return (
